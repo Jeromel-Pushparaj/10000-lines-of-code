@@ -24,8 +24,22 @@ void printing_data(struct node *head){
     while(ptr != NULL){
         printf("%d ",ptr->data);
         ptr = ptr->link;
+    }    
+}
+
+int search_value(struct node *head,int value){
+    int n = 1;
+    if(head==NULL)
+        printf("The given linked list is empty.");
+    struct node *ptr = head;
+    while(ptr!=NULL){
+        if(ptr->data==value){
+            return n;
+        }
+        n++;
+
     }
-    
+return 0;
 }
 
 int main(){
@@ -47,4 +61,14 @@ int main(){
     head->link->link = current;
     count_of_node(head);
     printing_data(head);
+
+    int value,node_n;
+    value = 53;
+    node_n = search_value(head,value);
+    if(node_n>0){
+        printf("The given value is found in node :%d",node_n);
+
+    }else{
+        printf("The given value is not found.");
+    }
 }
