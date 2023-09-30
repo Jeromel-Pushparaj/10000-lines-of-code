@@ -129,29 +129,42 @@ struct node * del_last_node(struct node *head){
     return head; 
 }
 
-struct node * del_pos(struct node *head,int pos){
-    if(head==NULL){
-        printf("The linked list is already empty");
-    }else if(head->link == NULL){
-        free(head);
-        head = NULL;
-    }else{
-        struct node *tmp = head;
-        struct node *tmp2 = head;
+void del_pos(struct node **head,int pos){
+    struct node *previouse = *head;
+    struct node *current = *head;
 
-        pos--;
+    if(*head==NULL){
+        printf("Linked list is already emtpy!");
+    }else if(pos == 1){
+        *head = current->link;
+        free(current);
+        current = NULL;
+
+    }else{
         while(pos != 1){
-            tmp2 = tmp;
-            tmp = tmp->link;
+            previouse = current;
+            current = current->link;
             pos--;
         }
-        tmp2->link = tmp->link;
-        free(tmp);
-        tmp = NULL;
+        previouse->link = current->link;
+        free(current);
+        current = NULL;
+
     }
-    return head;
 
 }
+
+struct node * del_entire_list(struct node *head){
+    struct node *temp = head;
+    while(temp != NULL){
+        temp = temp->link;
+        free(head);
+        head = temp;//IN the end to make the head NUll just give temp value it's automaticaly became NULL by loop
+    }
+    return head;
+}
+
+
 
 int main(){
     
@@ -171,16 +184,23 @@ int main(){
 
     head->link->link = current;
 
+    printf("Adding node in beg...\n");
     add_node_beg(&head,31);//here through giving &head we send the pointer of the head to the fuction.
+    printf("Adding node in before given position...\n");
     insert_before_node(head,4,25);
+    printf("Adding node in after given position...\n");
     insert_after_node(head,4,06);
+    printf("Adding node in ending...\n");
     add_node_end(head,58);
+    printf("Counting number of node present in list...\n");
     count_of_node(head);
+    printf("printing the datas in the linked list...\n");
     printing_data(head);
 
 
     int value,node_n;
     value = 53;
+    printf("Searching the value: %d...\n",value);
     node_n = search_value(head,value);
     if(node_n>0){
         printf("The given value is found in node :%d\n",node_n);
@@ -190,15 +210,30 @@ int main(){
     }
 
     //deleting first node in the linked list
-
+    printf("Deleting first node...\n");
     head = del_first_node(head);
+    printf("Data After deleting: ");
     printing_data(head);
-
+    
+    printf("Deleting last node...\n");
     head = del_last_node(head);
+    printf("Data After deleting: ");
+    printing_data(head);
+    
+    printf("Deleting given node...\n");
+    del_pos(&head,2);
+    printf("Data After deleting: ");
     printing_data(head);
 
-    head = del_pos(head,2);
+    printf("Deleting Linked list Completely...\n");
+    head = del_entire_list(head);
+    if(head==NULL)
+        printf("The linked list is Deleted successfully.\n");
+
+    printf("Checking all node is Deleted by printing the node...\n");
     printing_data(head);
+    return 0;
+    
 
     
 }
