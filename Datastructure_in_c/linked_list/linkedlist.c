@@ -126,7 +126,7 @@ struct node * del_last_node(struct node *head){
         free(tmp);
         tmp = NULL;
     }
-    return head;
+    return head; 
 }
 
 struct node * del_pos(struct node *head,int pos){
