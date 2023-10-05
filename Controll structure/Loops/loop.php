@@ -1,7 +1,7 @@
 <?php
 print("Ten positive integers:");
-
-for($i=0;$i<10;$i++){
+intval($n);
+for($i=0;$i<$n;$i++){
     print($i+1);
     print("\t");
 }
