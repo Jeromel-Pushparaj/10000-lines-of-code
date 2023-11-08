@@ -28,9 +28,13 @@ You don't need to read input or print anything. Your task is to complete the fun
 int main(){
     char c[30];
     // scanf("%s",c);
-    getstr(c);
-
+    gets(c);
+    char s = "";
     for(int i=0;i<strlen(c);i++){
-        if(c[i])
+        if(c[i]==' '){
+            printf("%c",s);
+        }else{
+            printf("%c",c[i]);
+        }
     }
 }
