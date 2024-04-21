@@ -1,5 +1,5 @@
 ## Roadmap video : https://www.youtube.com/watch?v=L-EFQ5q6RvM
-
+> Take minimum two days to learn one topic and practice one after the clear notes of one topic move to next.
 ## Quantitative aptitude
 1. percentages
 2. simple equation
