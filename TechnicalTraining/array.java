@@ -12,5 +12,6 @@ public class array {
         for (int i : arr) {
             System.out.print(i + " ");
         }
+        sc.close();
     }
 }
