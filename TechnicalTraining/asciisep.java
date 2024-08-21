@@ -12,7 +12,7 @@ public class asciisep {
                 s2 = s2+c;
             }
         }
-        System.err.println(s1);
-        System.err.println(s2);
+        System.out.println(s1);
+        System.out.println(s2);
     }
 }
