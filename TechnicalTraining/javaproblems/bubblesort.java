@@ -1,3 +1,4 @@
+package javaproblems;
 public class bubblesort {
     public static void main(String[] args) {
         String s=" Welcom to the java Trainning cal";

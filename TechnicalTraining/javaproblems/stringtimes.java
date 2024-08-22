@@ -1,3 +1,4 @@
+package javaproblems;
 public class stringtimes {
     public static void main(String[] args) {
         String s = "a2b4c1d5";

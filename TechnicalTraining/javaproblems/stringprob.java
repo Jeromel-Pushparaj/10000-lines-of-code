@@ -1,3 +1,4 @@
+package javaproblems;
 public class stringprob {
     public static void main(String[] args) {
         String s1 = "hello";

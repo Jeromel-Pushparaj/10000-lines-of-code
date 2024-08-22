@@ -1,3 +1,4 @@
+package javaproblems;
 public class noOfChar {
 
 	public static void main(String[] args) {

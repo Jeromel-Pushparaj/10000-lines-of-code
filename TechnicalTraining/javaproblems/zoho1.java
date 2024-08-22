@@ -1,3 +1,4 @@
+package javaproblems;
 // it was the most simple and complex question zoho ever asked
 // it initially zoho never ask loop based prob because they use dsa prob
 

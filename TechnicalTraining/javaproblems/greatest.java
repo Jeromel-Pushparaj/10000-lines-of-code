@@ -1,3 +1,4 @@
+package javaproblems;
 import java.util.Scanner;
 public class greatest {
     public int great(int a, int b){

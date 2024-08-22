@@ -1,3 +1,4 @@
+package javaproblems;
 public class vowels {
     public static void main(String[] args) {
         String s = "Hello";

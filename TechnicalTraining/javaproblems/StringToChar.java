@@ -1,3 +1,4 @@
+package javaproblems;
 public class StringToChar {
 	public static void main(String[] args) {
 		char ch[] = {'h', 'e', 'l', 'l','o'};

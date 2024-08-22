@@ -1,3 +1,4 @@
+package javaproblems;
 public class charArray {
     public static void main(String[] args) {
         String s1 = "hello Java";
