@@ -1,24 +1,24 @@
 package oopsinjava;
 
 class GrandParent{
-    void land(){
+    void land1(){
         System.out.println("LAnd");
     }
-    void house(){
+    void house1(){
         System.out.println("House");
     }
 }
 
-class Parent extends GrandParent{
-    void car(){
+class Parent1 extends GrandParent{
+    void car1(){
         System.out.println("car");
     }
-    void bike(){
+    void bike1(){
         System.out.println("Bike");
     }
 }
-class Chile extends Parent{
-    void cycle(){
+class Chile extends Parent1{
+    void cycle1(){
         System.out.println("Cycle");
     }
 }
@@ -26,15 +26,15 @@ class Chile extends Parent{
 public class multilevel {
     public static void main(String[] args){
         // GrandParent gp = new GrandParent();
-        Parent p = new Parent();
+        Parent1 p = new Parent1();
         Chile c = new Chile();
-        p.house();
-        p.land();
+        p.house1();
+        p.land1();
         System.out.println("\nChile\n -----------------");
-        c.land();
-        c.house();
-        c.car();
-        c.bike();
-        c.cycle();
+        c.land1();
+        c.house1();
+        c.car1();
+        c.bike1();
+        c.cycle1();
     }
 }
