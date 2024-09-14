@@ -28,7 +28,7 @@ bool isAnagram(char s[], char t[]) {
 
 int main() {
     char s[] = "ac";
-    char t[] = "bb";
+    char t[] = "ac";
 
     if (isAnagram(s, t)) {
         printf("The strings are anagrams.\n");
