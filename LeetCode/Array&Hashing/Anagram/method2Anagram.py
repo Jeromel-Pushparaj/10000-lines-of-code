@@ -17,5 +17,5 @@ t = "bb"
 result = isAnagram(s,t)
 print(result)
 
-# this is also the right solution
+# this is not a right solution
 # I getting a value collision
