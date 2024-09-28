@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <title>typer</title>
+    </head>
+    <body>
+        <input type="text" id="in" onkeyup="letters()">
+        <h1 id="show"></h1>
+    </body>
+    <script>
+        var i = document.getElementById("in")
+        var s = document.getElementById("show")
+
+        function letters()
+        {
+            s.textContent = i.value
+        }
+    </script>
+</html>

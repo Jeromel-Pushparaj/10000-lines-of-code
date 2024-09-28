@@ -1,0 +1,94 @@
+.container{
+    max-width: 600px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+    grid-template-rows: 100px 50vh;
+    
+}
+p{
+    font-size: large;
+    font-weight: bolder;
+}
+button {
+    width: 180px;
+    height: 100px;
+    font-size: 26px;
+    color: white;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: transparent;
+    border: none;
+}
+div button {
+    margin: 0 5px;
+}
+
+button#rock{
+    grid-column: 1/2;
+    grid-row: 2/3;
+    justify-self: center;
+    align-self: center;
+    background-image: url(Images/icons8-rock-80.png);
+}
+button#rock:hover{
+    background-color: rgb(0, 255, 234);
+    border-radius: 50%;
+}
+button#papper{
+    grid-column: 2/3;
+    grid-row: 2/3;
+    justify-self: center;
+    align-self: center;
+    background-image: url(Images/icons8-paper-plane-64.png);
+}
+button#papper:hover{
+    background-color: rgb(234, 0, 255);
+    border-radius: 50%;
+}
+button#scissor{
+    grid-column: 3/4;
+    grid-row: 2/3;
+    justify-self: center;
+    align-self: center;
+    background-image: url(Images/icons8-scissors-64.png);
+}
+button#scissor:hover{
+    background-color: rgb(0, 255, 76);
+    border-radius: 50%;
+}
+
+.message{
+    grid-row: 1/2;
+    grid-column: span 3;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+.instructions{
+    grid-row: 2/3;
+    justify-self: center;
+    align-self: center;
+}
+.score{
+    grid-row: 1/2;
+    justify-self: center;
+    align-self: center;
+
+}
+.victory{
+    color: purple;
+}
+.lost{
+    color: rgb(255, 0, 0);
+}
+.pop{
+    display: none;
+    position: fixed;
+
+}
+.pop1{
+    display: none;
+    position: fixed;
+    left: 10px;
+    margin-right: -10px;
+}
