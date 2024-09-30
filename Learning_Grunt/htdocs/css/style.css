@@ -1,0 +1,23 @@
+/*Writen by Jeromel*/
+body {
+    background-color: black;
+  }
+h1 {
+    color: rgb(255, 176, 176);
+    text-align: center;
+  }
+p {
+    font-family: verdana;
+    font-size: 20px;
+    color: white;
+  }
+.dash{
+    border: 10px;
+}
+div{
+    color: yellow;
+}
+p{
+    text-align: center;
+}
+/*# sourceMappingURL=style.css.map */
