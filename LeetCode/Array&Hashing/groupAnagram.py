@@ -1,19 +1,21 @@
-def isAnagram(s,t):
-    if(len(s) != len(t)):
-        return False
-    freq = [0] * 26
-    for i in range(len(s)):
-        freq[ord(s[i]) - ord('a')] += 1
-        freq[ord(t[i]) - ord('a')] -= 1
+def groupAnagrams(strs):
+    mp ={}
+    ans = []
         
-    for j in range(len(freq)):
-        if(freq[j] != 0):
-            return False
-        
-    return True
+    for s in strs:
+        print(f"Starting of Loop:\nString: {s}\n Map: {mp}\n ans: {ans}\n")
+        sorted_str = ''.join(sorted(s))
+        print(f"s after sorting: {sorted_str}\n")
+        if sorted_str in mp:
+            ans[mp[sorted_str]].append(s)
+            print(f"Inside If : Map: {mp}\nans: {ans}\n")
+        else:
+            mp[sorted_str] = len(ans)
+            ans.append([s])
+            print(f"Inside esle : Map: {mp}\nans: {ans}\n\n")
+    print(ans)
 
 strs = ["eat","tea","tan","ate","nat","bat"]
-
-
+groupAnagrams(strs)
 
 # Output: [["bat"],["nat","tan"],["ate","eat","tea"]]
