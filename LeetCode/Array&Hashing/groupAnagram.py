@@ -15,7 +15,7 @@ def groupAnagrams(strs):
             print(f"Inside esle : Map: {mp}\nans: {ans}\n\n")
     print(ans)
 
-strs = ["eat","tea","tan","ate","nat","bat"]
+strs = ["eat","tea","tan","ate","nat","bat","tab"]
 groupAnagrams(strs)
 
 # Output: [["bat"],["nat","tan"],["ate","eat","tea"]]
