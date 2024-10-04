@@ -13,6 +13,6 @@ def isAnagram(s,t):
     return True
         
 s = "ac"
-t = "bb"
+t = "ca"
 result = isAnagram(s,t)
 print(result)

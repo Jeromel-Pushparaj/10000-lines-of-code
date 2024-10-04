@@ -113,5 +113,7 @@ module.exports = function(grunt){
     grunt.loadNpmTasks('grunt-contrib-cssmin');
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-contrib-concat');
+    grunt.registerTask('css', ['concat:cs', 'cssmin']);
+    grunt.registerTask('js', ['concat:js', 'uglify', 'obfuscator']);
     grunt.registerTask('default', ['copy','concat','cssmin','uglify','obfuscator','watch']);
 }
