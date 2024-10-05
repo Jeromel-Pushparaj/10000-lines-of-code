@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../scss/hello.scss"],"names":[],"mappings":";AAAA,EAAE,CAAC;AACH,IAAI,KAAK,CAAC,CAAC,IAAI,CAAC;AAChB,CAAC;AACD,CAAC,CAAC;AACF,IAAI,IAAI,CAAC,IAAI,CAAC,CAAC,KAAK,CAAC;AACrB","file":"style.scss","sourcesContent":["h1{\n    color: pink;\n}\np{\n    font-size: large;\n}"]}
