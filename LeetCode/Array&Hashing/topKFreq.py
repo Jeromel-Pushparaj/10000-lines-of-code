@@ -1,9 +1,5 @@
 import heapq
-
-
 # find top most frequent
-
-
 def topKFrequent(nums, k):
     # find the frequency of each number
     num_frequency_map = {}
