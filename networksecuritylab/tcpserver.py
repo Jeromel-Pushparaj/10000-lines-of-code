@@ -10,3 +10,4 @@ data = conn.recv(1024)
 print(f"Received: {data.decode()}")
 conn.sendall(b"Hello from Server")
 conn.close()
+
