@@ -2,5 +2,10 @@
     "cSpell.words": [
         "datastructures",
         "javaproblems"
-    ]
+    ],
+    "files.associations": {
+        "*.embeddedhtml": "html",
+        "*.py": "python",
+        "math.h": "c"
+    }
 }
