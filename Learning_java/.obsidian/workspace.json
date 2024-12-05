@@ -20,8 +20,23 @@
               "icon": "lucide-file",
               "title": "Decision Making and Looping"
             }
+          },
+          {
+            "id": "4e4c1c98e5b92856",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Resmue Building.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Resmue Building"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -162,20 +177,30 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "81cc84e7cff3eb7a",
+  "active": "4e4c1c98e5b92856",
   "lastOpenFiles": [
-    "Images/Pasted image 20241204200529.png",
+    "Pasted image 20241205202457.png",
+    "Remote Interview/Images/Pasted image 20241205195732.png",
+    "Resmue Building.md",
+    "Remote Interview/Images/Pasted image 20241205201056.png",
+    "Remote Interview/Images/Pasted image 20241205200746.png",
+    "Remote Interview/Images/Pasted image 20241205200225.png",
+    "Remote Interview/Images/Pasted image 20241205200123.png",
+    "Remote Interview/Images/Pasted image 20241205200119.png",
+    "Remote Interview/Images/Pasted image 20241205195316.png",
+    "Remote Interview/Images/Pasted image 20241205195423.png",
+    "Remote Interview/Images/Pasted image 20241205194535.png",
+    "Remote Interview/Images/Pasted image 20241205195109.png",
+    "Remote Interview/Images",
     "Notes/Decision Making and Looping.md",
+    "Remote Interview",
+    "FOP-Java/DecisionLoops/Dronelocation.java",
     "Images",
     "FOP-Java/DecisionLoops/Problem4.java",
     "FOP-Java/DecisionLoops/Problem3.java",
     "FOP-Java/DecisionLoops/Problem2.java",
-    "Images/Pasted image 20241204200657.png",
-    "Images/Pasted image 20241204200631.png",
     "FOP-Java/DecisionLoops/Problem.java",
     "FOP-Java/DecisionLoops/Switch.java",
-    "FOP-Java/DecisionLoops/Nif.class",
-    "FOP-Java/DecisionLoops/Nif.java",
-    "FOP-Java/DecisionLoops"
+    "FOP-Java/DecisionLoops/Nif.class"
   ]
 }
