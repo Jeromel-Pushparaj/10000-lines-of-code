@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Resmue Building.md",
+                "file": "DSA/Greedy Method - Algorithm.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Resmue Building"
+              "title": "Greedy Method - Algorithm"
             }
           }
         ],
@@ -179,18 +179,22 @@
   },
   "active": "4e4c1c98e5b92856",
   "lastOpenFiles": [
-    "Pasted image 20241205202457.png",
+    "Pasted image 20241206203359.png",
+    "Pasted image 20241206202844.png",
+    "Pasted image 20241206202242.png",
+    "DSA/Programs/coin.java",
+    "DSA/Programs",
+    "Remote Interview/Resmue Building.md",
+    "DSA/Greedy Method - Algorithm.md",
+    "DSA",
+    "Remote Interview/Images/Pasted image 20241205202457.png",
     "Remote Interview/Images/Pasted image 20241205195732.png",
-    "Resmue Building.md",
     "Remote Interview/Images/Pasted image 20241205201056.png",
     "Remote Interview/Images/Pasted image 20241205200746.png",
     "Remote Interview/Images/Pasted image 20241205200225.png",
     "Remote Interview/Images/Pasted image 20241205200123.png",
     "Remote Interview/Images/Pasted image 20241205200119.png",
     "Remote Interview/Images/Pasted image 20241205195316.png",
-    "Remote Interview/Images/Pasted image 20241205195423.png",
-    "Remote Interview/Images/Pasted image 20241205194535.png",
-    "Remote Interview/Images/Pasted image 20241205195109.png",
     "Remote Interview/Images",
     "Notes/Decision Making and Looping.md",
     "Remote Interview",
@@ -198,9 +202,6 @@
     "Images",
     "FOP-Java/DecisionLoops/Problem4.java",
     "FOP-Java/DecisionLoops/Problem3.java",
-    "FOP-Java/DecisionLoops/Problem2.java",
-    "FOP-Java/DecisionLoops/Problem.java",
-    "FOP-Java/DecisionLoops/Switch.java",
-    "FOP-Java/DecisionLoops/Nif.class"
+    "FOP-Java/DecisionLoops/Problem2.java"
   ]
 }
