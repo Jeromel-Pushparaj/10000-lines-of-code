@@ -19,7 +19,7 @@ class LinkedList{
         if(head == null){
             head = new Node(element);
             return;
-        }
+        }        
 
         newNode.next = null;
         Node last = head;
@@ -32,6 +32,10 @@ class LinkedList{
         return;
     }
 
+    public void insert_at_the_begining(int element)
+    {
+      
+    }
     public void printlist(){
         Node temp = head;
         while (temp != null){
