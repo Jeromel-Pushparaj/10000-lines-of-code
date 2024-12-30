@@ -1,3 +1,4 @@
+<?php
 class Solution {
 
     /**
@@ -17,6 +18,11 @@ class Solution {
             else
                 $result[$key] = [$s];
         }
+
         return $result;
     }
 }
+
+$arg = ['ant', 'nat', 'eat', 'ate'];
+$s = new Solution();
+print_r($s->groupAnagrams($arg));
