@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Membership Satisfaction Survey</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+/* styles.css */
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #e3f2fd;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.form-container {
+  background-color: #ffffff;
+  padding: 20px 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  width: 100%;
+}
+
+h1 {
+  text-align: center;
+  color: #007acc;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+span {
+  color: red;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.name-fields input {
+  width: calc(50% - 10px);
+  margin-right: 10px;
+}
+
+.name-fields input:last-child {
+  margin-right: 0;
+}
+
+.address-details input,
+.address-details select {
+  width: calc(25% - 10px);
+  margin-right: 10px;
+}
+
+.address-details input:last-child,
+.address-details select:last-child {
+  margin-right: 0;
+}
+
+.radio-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007acc;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #005f99;
+}
+</style>
+<body>
+  <div class="form-container">
+    <h1>Membership Satisfaction Survey</h1>
+    <form>
+      <div class="form-group">
+        <label for="name">Name <span>*</span></label>
+        <div class="name-fields">
+          <input type="text" id="first-name" name="first-name" placeholder="First">
+          <input type="text" id="last-name" name="last-name" placeholder="Last">
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="address">Address <span>*</span></label>
+        <input type="text" id="address" name="address" placeholder="Street Address">
+        <div class="address-details">
+          <input type="text" id="city" name="city" placeholder="City">
+          <input type="text" id="region" name="region" placeholder="Region">
+          <input type="text" id="postal-code" name="postal-code" placeholder="Postal / Zip Code">
+          <select id="country" name="country">
+            <option value="romania">Romania</option>
+            <!-- Add other countries as needed -->
+          </select>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="phone">Phone <span>*</span></label>
+        <input type="tel" id="phone" name="phone" placeholder="xxx-xxx-xxxx">
+      </div>
+
+      <div class="form-group">
+        <label for="account-number">Account Number <span>*</span></label>
+        <input type="text" id="account-number" name="account-number" placeholder="Located in the top right hand corner of your billing statement in bold">
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" placeholder="Your email address">
+      </div>
+
+      <div class="form-group">
+        <label for="membership-duration">1). How long have you been a member of X company? <span>*</span></label>
+        <div class="radio-group">
+          <label><input type="radio" name="membership-duration" value="less-than-a-year"> Less than a year</label>
+          <label><input type="radio" name="membership-duration" value="1-5-years"> 1-5 years</label>
+          <label><input type="radio" name="membership-duration" value="6-10-years"> 6-10 years</label>
+          <label><input type="radio" name="membership-duration" value="11-19-years"> 11-19 years</label>
+          <label><input type="radio" name="membership-duration" value="20-plus-years"> 20+ years</label>
+        </div>
+      </div>
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</body>
+</html>
