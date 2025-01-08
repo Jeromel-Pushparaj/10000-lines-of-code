@@ -1,0 +1,30 @@
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1 1 auto;
+  background: black;
+  color: white;
+  height:100vh;
+  margin:0;
+  flex-direction:column;
+  border: 1px;
+}
+.box{
+  padding: 20px;
+  display: flex;
+  flex-direction:column;
+ justify-content:center; 
+ align-items:center;
+  border-style:solid;
+  border-color:white;
+}
+input{
+  margin:20px;
+  margin-top:0px;
+}
+button{
+  background-color:cyan;
+  color:black;
+  margin:20px;
+}
