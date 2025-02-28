@@ -24,7 +24,7 @@ class Solution{
      * @param string $t
      * @return bool
      */
-    function isAnagram(string $s, string $t){
+    public function isAnagram(string $s, string $t): bool{
         if(strlen($s)!=strlen($t)){
             return false;
         }
@@ -43,3 +43,4 @@ class Solution{
         
     }
 }
+?>
