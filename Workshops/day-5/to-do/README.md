@@ -1,70 +1,123 @@
-# Getting Started with Create React App
+# React Task Manager with Tailwind CSS
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
+This project is a React-based task management application using Tailwind CSS for styling and Axios for API interactions. The application allows users to perform CRUD operations on tasks categorized into `Not Started`, `In Progress`, and `Completed`. The UI features a minimalistic black-and-white theme with curved boxes and buttons.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## Features
+- **Task Categories**: Organize tasks into `Not Started`, `In Progress`, and `Completed`.
+- **CRUD Operations**: Create, read, update, and delete tasks.
+- **Minimalist UI**: Designed with Tailwind CSS for a clean, modern look.
+- **API Integration**: Communicates with a backend API for task management.
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Prerequisites
+- Node.js (v14 or higher)
+- A running instance of the Task Management API.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## Installation and Setup
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### 1. Initialize React Application
+Create a new React app:
+```bash
+npx create-react-app task-manager
+cd task-manager
+```
 
-### `npm run build`
+### 2. Install Tailwind CSS
+Set up Tailwind CSS for the project:
+```bash
+npm install -D tailwindcss postcss autoprefixer
+npx tailwindcss init
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Update the `tailwind.config.js` file:
+```javascript
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: ["./src/**/*.{js,jsx,ts,tsx}"],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+};
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Add Tailwind CSS imports to `src/index.css`:
+```css
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### 3. Install Axios
+Install Axios for API calls:
+```bash
+npm install axios
+```
 
-### `npm run eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Folder Structure
+```
+src/
+├── components/
+│   ├── TaskForm.js
+│   ├── TaskList.js
+├── App.js
+├── index.css
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+---
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## How to Run
+1. Start the React development server:
+   ```bash
+   npm start
+   ```
+2. Ensure the Task Management API is running at `http://localhost:8080`.
+3. Open the app in your browser at `http://localhost:3000`.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+---
 
-## Learn More
+## How to Use
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### 1. Adding a Task
+- Fill in the `Title`, `Description`, and `Category` fields in the form.
+- Click the **Add Task** button to create a new task.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### 2. Viewing Tasks
+- Tasks are grouped into categories: `Not Started`, `In Progress`, and `Completed`.
 
-### Code Splitting
+### 3. Updating a Task
+- Use category buttons (e.g., **In Progress**) to move a task to a different category.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### 4. Deleting a Task
+- Click the **Delete** button to remove a task.
 
-### Analyzing the Bundle Size
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Styling Highlights
+- **Minimalistic Theme**: Black-and-white color scheme.
+- **Curved Elements**: Rounded corners using `rounded-lg`.
+- **Consistent Layout**: Spacing and alignment achieved with Tailwind utilities.
 
-### Making a Progressive Web App
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Dependencies
+- **React**: Frontend library for building the application.
+- **Tailwind CSS**: Utility-first CSS framework for styling.
+- **Axios**: HTTP client for interacting with the backend API.
 
-### Advanced Configuration
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## Further Development
+Consider adding:
+- User authentication for personalized task management.
+- Drag-and-drop functionality for category management.
+- Dark mode toggle for improved user experience.
 
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
