@@ -24,7 +24,22 @@ class Solution{
      * @param string $t
      * @return bool
      */
-    function isAnagram(string $s, string $t): bool{
-        return false;
+    function isAnagram(string $s, string $t){
+        if(strlen($s)!=strlen($t)){
+            return false;
+        }
+        $freq = array();
+        for($i=0;$i<=strlen($s);$i++){
+            $freq[ord($s[$i]) - ord("a")] = $freq[ord($s[$i]) - ord("a")] + 1;
+            $freq[ord($t[$i]) - ord("a")] = $freq[ord($t[$i]) - ord("a")] - 1;
+        }
+        
+        foreach ($freq as $f){
+            if($f!=0){
+                return false;
+            }
+        }
+        return true;
+        
     }
 }
