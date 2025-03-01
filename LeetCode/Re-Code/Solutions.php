@@ -42,5 +42,24 @@ class Solution{
         return true;
         
     }
+
+    /**
+     * Summary of twoSum
+     * @param array $nums
+     * @param int $target
+     * @return array<int|mixed>|null
+     */
+    public function twoSum(array $nums, int $target){
+        $map = [];
+
+        for($i=0;$i<=count($nums); $i++){
+            $complement = $target - $nums[$i];
+            if(array_key_exists($complement, $map)){
+                return [$map[$complement], $i];
+            }
+            $map[$nums[$i]] = $i;
+        }
+        return null;
+    }
 }
 ?>

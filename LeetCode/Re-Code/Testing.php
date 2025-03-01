@@ -20,4 +20,13 @@ function isAnagram(): void{
     $result = $solution->isAnagram($s, t: $t) ? "Anagram" : "Not a Anagram";
     print($result);
 }
+
+function twoSum(){
+    global $solution;
+    $nums = [4, 5, 3, 2, 6];
+    $target = 9;
+
+    $result = $solution->twoSum($nums, $target);
+    print_r($result);
+}
 ?>
