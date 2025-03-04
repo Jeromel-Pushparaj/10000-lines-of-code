@@ -61,5 +61,24 @@ class Solution{
         }
         return null;
     }
+
+    /**
+     * Summary of groupAnagrams
+     * @param mixed $strs
+     * @return array[]
+     */
+    public function groupAnagrams($strs){
+        $result = [];
+        foreach($strs as $s){
+            $key = md5(serialize(count_chars($s,1)));
+            if(array_key_exists($key, $result)){
+                $result[$key][] = $s;
+            }else{
+                $result[$key] = [$s];
+            }
+        }
+
+        return $result;
+    }
 }
 ?>
